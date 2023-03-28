@@ -6,7 +6,14 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
-       <bean id="myPet" class="edu.springapp.models.Dog">
+    <bean id="myPet" class="edu.springapp.models.Cat">
 
-       </bean>
+    </bean>
+    <bean id="myPerson" class="edu.springapp.models.Person">
+<!--             <constructor-arg ref="myPet"/>-->
+         <property name="pet" ref="myPet"/>
+         <property name="surName" value = "Naimoff"/>
+         <property name="age" value = "601"/>
+    </bean>
+
 </beans>

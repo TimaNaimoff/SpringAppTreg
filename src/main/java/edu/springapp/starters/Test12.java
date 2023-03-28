@@ -1,5 +1,6 @@
-package edu.springapp.models;
+package edu.springapp.starters;
 
+import edu.springapp.models.Pet;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test12 {
