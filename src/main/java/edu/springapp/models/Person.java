@@ -1,5 +1,8 @@
 package edu.springapp.models;
 
+import org.springframework.stereotype.Component;
+
+@Component("personBean")
 public class Person {
     private Pet pet;
     private String surName;

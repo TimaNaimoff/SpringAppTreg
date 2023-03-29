@@ -6,10 +6,6 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
-    <bean id="myPet"
-          class="edu.springapp.models.Cat"
-          init-method="init"
-          scope="prototype"
-          destroy-method="destroy">
-    </bean>
+
+    <context:component-scan base-package="edu.springapp.*"/>
 </beans>
