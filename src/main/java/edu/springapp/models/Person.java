@@ -1,23 +1,29 @@
 package edu.springapp.models;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component("personBean")
 public class Person {
+//    @Qualifier("catBean")
+//    @Autowired
     private Pet pet;
+//    @Value("Timuris")
     private String surName;
+//    @Value("33")
     private int age;
-    public Person(){
-        System.out.println("Person is created!");
-    }
-    public Person(Pet pet){
-        System.out.println("Person is created!");
+    @Autowired
+    public Person(@Qualifier("catBean")Pet pet){
         this.pet=pet;
     }
     public void callYourPet(){
         System.out.println("Khu-khu! Surname=" +getSurName()+",age="+getAge());
         this.pet.say();
     }
+//    @Autowired
+//    @Qualifier("catBean")
     public void setPet(Pet pet){
         System.out.println("Dependency "+pet+" is injected!");
         this.pet=pet;
