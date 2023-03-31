@@ -35,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.ScopeTest">
+  <component name="RunManager" selected="Application.Test7">
     <configuration name="ConfigureWithAnnotations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.springapp.starters.ConfigureWithAnnotations" />
       <module name="SpringAppTreg" />
@@ -51,19 +51,6 @@
     </configuration>
     <configuration name="ScopeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.springapp.starters.ScopeTest" />
-      <module name="SpringAppTreg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.springapp.starters.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.springapp.starters.Test4" />
       <module name="SpringAppTreg" />
       <extension name="coverage">
         <pattern>
@@ -101,13 +88,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.springapp.starters.Test7" />
+      <module name="SpringAppTreg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.springapp.starters.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test7" />
         <item itemvalue="Application.ScopeTest" />
         <item itemvalue="Application.ConfigureWithAnnotations" />
         <item itemvalue="Application.Test6" />
         <item itemvalue="Application.Test5" />
-        <item itemvalue="Application.Test4" />
       </list>
     </recent_temporary>
   </component>
