@@ -52,7 +52,7 @@ public class AspectLogging {
         System.out.println("methodSignature.getReturnType() = "+methodSignature.getReturnType());
         System.out.println("methodSignature.getName() = "+methodSignature.getName());
         if(methodSignature.getName().equals("addBook")){
-            Object[]arguments= joinPoint.getArgs();
+            Object[]arguments = joinPoint.getArgs();
             for(Object obj:arguments){
                 if(obj instanceof Book myBook){
                     System.out.println("INFO books: book's name = "+myBook.getName()+", author = "+myBook.getAuthor()+",year of publication = "+myBook.getYearOfPublication());
