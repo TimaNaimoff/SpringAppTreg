@@ -1,4 +1,4 @@
-package edu.springapp.spring_aop.utils;
+package edu.springapp.starters;
 
 import edu.springapp.spring_aop.config.SpringConfig;
 import edu.springapp.spring_aop.models.Student;
@@ -12,8 +12,12 @@ public class Test2 {
         AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(SpringConfig.class);
         University university = context.getBean("university",University.class);
         university.addStudents();
-        List<Student> students = university.getStudents();
-        System.out.println(students);
+        try {
+            List<Student> students = university.getStudents();
+            System.out.println(students);
+        }catch(RuntimeException e){
+            System.out.println("Exception catch: "+e);
+        }
         context.close();
     }
 }

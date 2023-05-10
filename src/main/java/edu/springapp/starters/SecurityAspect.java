@@ -1,4 +1,4 @@
-package edu.springapp.spring_aop.utils;
+package edu.springapp.starters;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
